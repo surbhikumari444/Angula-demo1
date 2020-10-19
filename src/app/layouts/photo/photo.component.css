@@ -1,0 +1,33 @@
+
+@media (max-width: 680px) 
+{
+    img
+    {
+        display: none;
+    }
+    .child2{
+      margin-left:20%;
+      margin-right: auto;
+    }
+    
+}
+/* @media (max-width: 560px) 
+{
+    
+    .child2{
+      margin-left: 100px;
+      
+    }
+    
+} */
+ 
+/* .child2
+{
+  display: flex;
+    width: 21%;
+     float:left; 
+     height:100%; 
+     
+   margin-left: 20px;
+   padding-top: 30px;
+} */

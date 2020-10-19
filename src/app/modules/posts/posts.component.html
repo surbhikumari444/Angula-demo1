@@ -1,0 +1,97 @@
+<mat-card fxLayout="column">
+    <mat-card-header>
+      
+      <mat-card-title>Create Organistion</mat-card-title>
+      <mat-card-subtitle>Add your Organistion detail below, *are mandatory fields </mat-card-subtitle>
+    </mat-card-header>
+    
+   
+    <mat-card-content>
+       <div >
+        <div class="title">Organistion Details</div>
+        <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap.lt-md="0px">
+           <mat-form-field fxFlex="33"  appearance="outline">
+               <mat-label>
+                   Company Name
+               </mat-label>
+               <input matInput >
+
+           </mat-form-field>
+        </div>
+           
+    </div>
+   <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap.lt-md="0px">
+      
+           <mat-form-field fxFlex="50" appearance="outline">
+               <mat-label>
+                  Type of Company
+               </mat-label>
+               <input matInput >
+
+           </mat-form-field>
+           <mat-form-field fxFlex="50" appearance="outline">
+            <mat-label>
+                Type of business
+            </mat-label>
+            <input matInput >
+
+        </mat-form-field>
+           <mat-form-field fxFlex="50" appearance="outline">
+            <mat-label>
+                Type of Industry
+            </mat-label>
+            <input matInput required>
+
+        </mat-form-field>
+    </div>
+    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap.lt-md="0px">
+
+        
+           <mat-form-field fxFlex="33" appearance="outline">
+               <mat-label>
+                   No. of employees
+               </mat-label>
+               <input matInput >
+
+           </mat-form-field>
+           
+    </div>
+    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap.lt-md="0px">
+        
+        <mat-form-field fxFlex="33" appearance="outline">
+            <mat-label>
+               Uploads
+            </mat-label>
+            <input matInput >
+            <mat-icon matSuffix>open_in_browser</mat-icon>
+            
+
+        </mat-form-field>
+        
+ </div>
+    <div >
+        <div class="title">Password</div>
+        <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap.lt-md="0px">
+           <mat-form-field fxFlex="33" appearance="outline">
+               <mat-label>
+                Mobil No.
+               </mat-label>
+               <input matInput >
+
+           </mat-form-field>
+           <mat-form-field fxFlex="33" appearance="outline">
+            <mat-label>
+               Email ID
+            </mat-label>
+            <input matInput required>
+
+        </mat-form-field>
+    </div>
+    </div>
+    <div fxLayout="row" >
+        <button fxFlex="42"  mat-raised-button >SUBMIT</button>
+    
+       </div>
+        </mat-card-content>
+   
+  </mat-card>

@@ -1,0 +1,53 @@
+
+    
+      <div class="cantain">
+            <div>
+            <img  class="logo" src="../../../assets/unnamed - Copy.png"
+           
+            >
+        </div>
+        <form fxLayout="column" (ngSubmit) ="onLogin()" name="loginForm" [formGroup]="loginForm">
+         <mat-form-field  appearance="outline">
+            <mat-label>
+                Email ID
+            </mat-label>
+            <input
+            formControlName="email" 
+            matInput
+            required
+            >
+            <mat-error *ngIf="loginForm.get('email').errors?.required">
+                Email required
+
+            </mat-error>
+            <mat-error *ngIf="loginForm.get('email').errors?.email">
+                password required min length 8
+    
+            </mat-error>
+
+        </mat-form-field>
+        
+     <mat-form-field fxFlex class="try" appearance="outline">
+            <mat-label>
+             Password
+            </mat-label>
+            <input  formControlName="password" matInput [type]="hide ? 'password' : 'text'">
+        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+        <mat-error *ngIf="loginForm.get('password').errors?.required">
+            password required min length 8
+
+        </mat-error>
+        
+        </mat-form-field>
+        
+        <mat-checkbox>Remember This computer!</mat-checkbox><br><br>
+        <div fxLayout="row" >
+            <button fxFlex="42"  mat-raised-button >SIGN-IN</button>
+        
+           </div>
+        
+        
+    </form>
+    </div>

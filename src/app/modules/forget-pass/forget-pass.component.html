@@ -1,0 +1,31 @@
+
+        
+        
+            <div>
+            <img  class="logo" src="../../../assets/unnamed - Copy.png"
+           
+            >
+        </div>
+        <form fxLayout="column" (ngSubmit) ="onForget()" name="onForgetForm" [formGroup]="onForgetForm">
+            <p>Forget Password</p>
+
+       
+         <mat-form-field fxFlex class="try" appearance="outline">
+            <mat-label>
+                Email ID
+            </mat-label>
+            <input
+            matInput
+            formControlName="email" 
+            
+            >
+
+        </mat-form-field>
+        
+    
+        
+        <br><br>
+        <button mat-raised-button color="primary">Submit</button>
+        
+        </form>
+        

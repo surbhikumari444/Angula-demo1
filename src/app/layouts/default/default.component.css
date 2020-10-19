@@ -1,0 +1,17 @@
+:host{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+mat-sidenav{
+    width: 230px;
+    background-color: #243746;
+}
+mat-sidenav-container{
+    height: 100%;
+}
+mat-sidenav-content{
+    padding: 20px;
+    padding-bottom: 20px;
+}

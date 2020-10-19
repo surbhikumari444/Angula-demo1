@@ -1,0 +1,127 @@
+
+   
+            <div>
+            <img  class="logo" src="../../../assets/unnamed - Copy.png"
+           
+            >
+        </div>
+        <form fxLayout="column" (ngSubmit) ="onSignUp()" name="signupForm" [formGroup]="signupForm">
+        <mat-form-field class="try" fxFlex appearance="outline">
+            <mat-label>
+                First Name
+            </mat-label>
+            <input matInput 
+            formControlName="First_name"
+            required
+            >
+           
+
+        </mat-form-field>
+        
+        <mat-form-field fxFlex class="try" appearance="outline">
+         <mat-label>
+             Last Name
+         </mat-label>
+         <input matInput 
+         formControlName="Last_name"
+         >
+
+     </mat-form-field>
+     <mat-form-field  fxFlex class="try" appearance="outline">
+        <mat-label>
+            Email ID
+        </mat-label>
+        <input
+        formControlName="email" 
+        matInput
+        required
+        >
+        
+
+    </mat-form-field>
+  <div fxLayout="row"  fxLayoutGap="20px" >  
+    <mat-form-field fxFlex style="width: 150px;" appearance="outline">
+        <mat-label>
+         Password
+        </mat-label>
+        <input  formControlName="password" matInput [type]="hide ? 'password' : 'text'">
+    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+    </button>
+   
+    </mat-form-field>
+    <mat-form-field fxFlex style="width: 150px;" appearance="outline">
+        <mat-label>
+         Confirm Password
+        </mat-label>
+        <input  formControlName="password_confirmation" matInput [type]="hide ? 'password' : 'text'">
+    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+    </button>
+   
+    </mat-form-field>
+  </div>
+  <div fxLayout="row"  fxLayoutGap="20px" >  
+    <mat-form-field fxFlex style="width: 150px;"appearance="outline">
+        <mat-label>
+            DOB
+        </mat-label>
+        <input matInput type="date" formControlName="dob" >
+
+    </mat-form-field>
+
+    <mat-form-field fxFlex style="width: 150px; " appearance="outline">
+        <mat-label>
+            PAN
+        </mat-label>
+        <input matInput 
+        formControlName="pan"
+        required
+        >
+       
+    </mat-form-field>
+    </div>
+    <div fxLayout="row"  fxLayoutGap="20px" >  
+    
+    <mat-form-field fxFlex style="width: 150px;
+    
+    margin-right:20px; " appearance="outline">
+        <mat-label>
+          Aadhar
+        </mat-label>
+        <input matInput 
+        formControlName="aadhar"
+        
+        required
+        >
+        
+    </mat-form-field>
+
+     <mat-form-field fxFlex style="width: 150px;" appearance="outline">
+        <mat-label>
+            Mobil No.
+        </mat-label>
+        <input matInput
+        formControlName="mobile"
+        >
+
+    </mat-form-field>
+    </div>
+    
+ 
+    <mat-form-field fxFlex class="try" appearance="outline">
+        <mat-label>
+            Role
+        </mat-label>
+        <input matInput 
+        formControlName="user_role"
+        
+        >
+
+    </mat-form-field>
+        
+        <button mat-raised-button color="primary">CREATE ACCOUNT</button>
+        
+
+    </form>
+     
