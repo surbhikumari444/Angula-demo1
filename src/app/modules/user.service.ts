@@ -38,7 +38,7 @@ export class UserService {
   }
   signup(credentials: SignupCredentials){
     return this.http.post<any>(
-      `${this.baseUrl}/api/registerSuperHyperUser/${this.accesstoken}`,
+      `${this.baseUrl}/api/registerSuperHyperUser?${this.accesstoken}`,
       credentials
     );
 

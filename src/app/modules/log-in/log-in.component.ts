@@ -31,10 +31,16 @@ export class LogInComponent implements OnInit {
     this.userService.login(this.loginForm.value).subscribe({
       next: (response) =>{
         console.log(this)
-
-        setTimeout(()=> {
-          this.router.navigate(['']);
-        },1000)
+        console.log(response)
+        if(response.accessToken ){
+          setTimeout(()=> {
+            this.router.navigate(['']);
+          },1000)
+         
+        }
+        else{
+          return null
+      }
 
       },
       error: err =>{
